@@ -1,0 +1,55 @@
+section{
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+     
+    
+    position: relative;
+}
+.underline
+{
+    height: 4px;
+    width:3.5rem;
+    background-color: #00aaff;
+     
+
+}
+
+a{
+    color:#29a9e2;
+    text-decoration: none;
+}
+
+.client-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    box-shadow: 0px 2px 12px rgb(0 0 0 / 8%);
+    overflow: hidden;
+    background: #fff;
+    height: 100px;
+    margin: 8px;
+    position: relative;
+   
+}
+
+.client-logo img {
+    transition: transform 0.3s ease;
+  }
+  
+  .client-logo:hover img {
+    transform: scale(1.3);
+  }

@@ -1,0 +1,77 @@
+#breadcrumbs {
+  padding: 15px 0;
+  background: #29a9e2;
+  min-height: 40px;
+  margin-top: 72px;
+}
+
+#breadcrumbs h2 {
+  font-size: 26px;
+  font-weight: 300;
+  color: #fff;
+}
+
+ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+
+ol a {
+  color: #fff;
+}
+
+.section-bg {
+  background-color: #f7f7f7;
+}
+
+.icon-box {
+  text-align: center;
+  padding: 10px 20px 24px 10px;
+  transition: all ease-in-out 0.4s;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-box .icon {
+  margin: 0 auto;
+  width: 275px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.3s;
+  position: relative;
+}
+
+.icon-box img {
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover img {
+  transform: scale(1.1);
+}
+.icon-box h4 {
+  font-weight: 600;
+  margin: 10px 0 15px 0;
+  font-size: 22px;
+}
+.icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.icon-box h4 a {
+  color: #111;
+  transition: ease-in-out 0.3s;
+  text-decoration: none;
+}
+
+.services {
+  margin-bottom: 40px;
+}

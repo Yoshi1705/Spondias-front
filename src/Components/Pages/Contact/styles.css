@@ -1,0 +1,99 @@
+#breadcrumbs {
+    padding: 15px 0;
+    background: #29a9e2;
+    min-height: 40px;
+    margin-top: 72px;
+}
+
+#breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 991px){
+.breadcrumbs ol li {
+    display: inline-block;
+}
+}
+
+ol a {
+    color: #fff;
+}
+
+section{
+      padding: 60px 0;
+}
+.row .contact-title h3 {
+    color: #0094FF;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+p, span, ul, a {
+    font-family: 'Imprima', sans-serif;
+}
+.about-us-img {
+    width: 578px;
+}
+
+.contact-area {
+    padding-top: 0px;
+}
+
+a {
+    color: #29a9e2;
+    text-decoration: none;
+}
+
+.contact-area .contact-form {
+    -webkit-box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 11px 3px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    width:  100%;
+}
+
+.contact-form form {
+    text-align: center;
+}
+
+.contact-form form .row .col-lg-12 {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.contact-form form .form-group {
+    text-align: left;
+}
+
+.contact-form form .form-control {
+    background-color: #ffffff;
+    border: none;
+    -webkit-box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2) !important;
+    box-shadow: 0px 5px 28.5px 1.5px rgba(149, 152, 200, 0.2) !important;
+    height: 57px;
+    color: #3aae36;
+    border: 1px solid #ffffff;
+    margin: 8px;
+    font-size: 13px;
+}
+
+.contact-form .default-btn {
+    cursor: pointer;
+    margin-top: 10px;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+@media(max-width: 900px) {
+    .contact-form {
+       
+      margin-top: 10px;
+    }
+    .about-us-img{
+        width:auto;
+    }
+  }
+  
+
+ 
