@@ -1,9 +1,10 @@
-import axios from 'axios';
+ import axios from 'axios';
+const backendURL = "https://spondiasbackend-igw3.vercel.app";
 
 const client = axios.create({
-    baseURL: "http://localhost:5000/api/"
+    baseURL: backendURL + "/api"
 });
 
-export const imageBaseURL = "http://localhost:5000/images"
+export const imageBaseURL = backendURL + "/images";
 
 export default client;
