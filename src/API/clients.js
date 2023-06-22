@@ -1,5 +1,5 @@
  import axios from 'axios';
-const backendURL = "https://spondiasbackend-igw3.vercel.app";
+const backendURL = "https://spondias-backend-1.onrender.com";
 
 const client = axios.create({
     baseURL: backendURL + "/api"
