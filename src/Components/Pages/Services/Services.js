@@ -1,21 +1,16 @@
 import {React,useEffect, useState} from "react";
 import "./styles.css";
-import img1 from "./Images/image_625d3a57b6.jpg";
-import img2 from "./Images/image_625d3a6ee7.jpg";
-import img3 from "./Images/image_625d3a8097.jpg";
-import img4 from "./Images/image_625d3d208b.jpg";
-import img5 from "./Images/image_625d3db74e.jpg";
-import img6 from "./Images/image_625d3dfd5a.jpg";
-import img7 from "./Images/image_625d3e3ed1.jpg";
-import img8 from "./Images/image_625d3e74e3.jpg";
-import img9 from "./Images/image_625d3e74em.jpg";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Info from "./Info";
 import client, { imageBaseURL } from "../../../API/clients";
 
 function Services() {
 
   const [services, setServices] = useState([]);
+
+  const [selectedService, setSelectedService] = useState(null);
+
 
   const fetchServices = () => {
     client.get('services/').then((response) => {
@@ -30,6 +25,14 @@ function Services() {
     fetchServices();
     AOS.init();
   }, []);
+
+
+    const clickHandler = (service) =>{
+
+       setSelectedService(service)
+      
+    }
+
 
   return (
     <div className="services">
@@ -49,7 +52,9 @@ function Services() {
         </div>
       </section>
 
-      <section className="section-bg">
+       {selectedService ?  (<Info  name = {selectedService.name} description = {selectedService.description}/>) :  
+
+      (<section className="section-bg">
         <div class="container pt-6 aos-init aos-animate" data-aos="fade-up">
           <div class="row">
             {services.map((service, idx) => {
@@ -73,8 +78,8 @@ function Services() {
                 </p>
 
                 <a
-                  href="readmore.php?topic=Hosting"
-                  class=" btn btn-primary mt-3"
+                  
+                  class=" btn btn-primary mt-3" onClick={()=> clickHandler(service)}
                 >
                   Read More
                 </a>
@@ -83,7 +88,7 @@ function Services() {
             })}
           </div>
         </div>
-      </section>
+      </section>)}
     </div>
   );
 }

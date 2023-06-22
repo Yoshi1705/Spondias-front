@@ -1,0 +1,38 @@
+
+
+.header{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+     
+    margin-bottom: 10px;
+}
+
+.header h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.underline
+{
+    height: 2.5px;
+    width:3rem;
+    background-color: #00aaff;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.des{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: 'Imprima', sans-serif;
+    padding: 40px;
+}
+ 
